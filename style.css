@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "Outfit";
+    src: url('/assets/fonts/Outfit/static/Outfit-ExtraBold.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('/assets/fonts/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+
+body{
+    width: 90%;
+    margin: 0px auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.set{
+    display: flex;
+
+}
+
+.logo{
+    font-family: "Outfit";
+    font-size: 22px;
+    gap: 15px;
+}
+
+.services{
+    font-family: "Inter";
+    font-size: 15px;
+    gap: 25px;
+}
+
+.list{
+   font-family: "Inter";
+   font-size: 14px;
+   font-weight: 600;
+   gap: 15px;
+}
+
+.list button{
+    border-radius: 10px;
+    border: none;
+    background-color: #10B981;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    padding: 0px 15px;
+}
+
+
+/* HERO SECTION */
+
+header{
+    max-width: 1440px;
+    margin-top: 70px;
+    display: flex;
+    gap: 50px;
+}
+
+header img{
+    width: 550px;
+    object-fit: contain;
+}
+
+.hero-set{
+    max-width: 750px;
+}
+
+.dot-text{
+    display: inline-flex;
+    align-items: center;
+    background-color: #ECFDF5;
+    gap: 3px;
+    font-family: "Inter";
+    padding: 0px 5px;
+    border-radius: 25px;
+}
+
+.dot-text p{
+    color: #059669;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform:uppercase;
+}
+
+.circle-dot{
+    background-color: #10B981;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.hero-set h2{
+    font-family: "Outfit";
+    font-size: 50px;
+    color: #111827;
+    margin-top: -0.5px;
+}
+
+.hero-set span{
+    color: #10B981;
+}
+
+.hero-set > p{
+    font-family: "Inter";
+    color: #4B5563;
+    font-weight: 400px;
+    font-size: 18px;
+    margin-top: -20px;
+    line-height: 30px;
+}
+
+.the_btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.the_btn img{
+    width: 15px;
+    height: 20px;
+}
+#btn_img{
+    border-radius: 10px;
+    border: none;
+    background-color: #10B981;
+    color: #ffffff;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    padding: 15px;
+}
+
+.the_btn button{
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    color: #111827;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.verified{
+    background-color: #ffffff;
+    font-family: "Inter";
+    font-size: 16px;
+    margin-left: -20px;
+    margin-top: -90px;
+    border-radius: 20px;
+}
+
+
+
+#hundred{
+    font-family: "Outfit";
+    color: #10B981;
+    font-weight: 700;
+    font-size: 28px;
+
+}
+
+.verified p{
+    font-size: 12px;
+    color: #4B5563;
+    margin-top: -20px;
+}
