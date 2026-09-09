@@ -22,6 +22,7 @@ body{
 }
 
 nav{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,8 +67,8 @@ nav{
 /* HERO SECTION */
 
 header{
-    max-width: 1440px;
-    margin-top: 70px;
+    padding-top: 80px;
+    padding-bottom: 20px;
     display: flex;
     gap: 50px;
 }
@@ -120,7 +121,7 @@ header img{
     font-family: "Inter";
     color: #4B5563;
     font-weight: 400px;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: -20px;
     line-height: 30px;
 }
@@ -136,6 +137,7 @@ header img{
     width: 15px;
     height: 20px;
 }
+
 #btn_img{
     border-radius: 10px;
     border: none;
@@ -164,11 +166,13 @@ header img{
 
 .verified{
     background-color: #ffffff;
+    position: relative;
+    width: 90px;
     font-family: "Inter";
     font-size: 16px;
     margin-left: -20px;
     margin-top: -90px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 
@@ -185,4 +189,141 @@ header img{
     font-size: 12px;
     color: #4B5563;
     margin-top: -20px;
+}
+
+
+/* BRANDS */
+
+.brand-section{
+    margin-top: 70px;
+     display: flex;
+     justify-content: space-between;
+    font-family: "Inter";
+    font-weight: 600;
+    align-items: center;
+    font-size: 14px;
+    color: #4B5563;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand-line{
+    color: #4B5563;
+}
+
+.items{
+    margin-top: 100px;
+}
+
+.item-heading{
+    margin-bottom: 50px;
+}
+
+.item-heading p{
+    font-family: "Inter";
+    font-size: 16px;
+    color: #4B5563;
+}
+
+#vertical{
+    color:  #10B981;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: -40px;
+}
+
+.item-heading h4{
+    font-size: 36px;
+    font-family: "Outfit";
+    margin-bottom: -10px;
+}
+
+
+.item-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.item-section{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter";
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0px 20px;
+}
+
+.item-section p{
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+    color: #059669;
+    background-color: #ECFDF5;
+}
+
+#grey{
+    background-color: #F9FAFB;
+    color: #4B5563;
+}
+
+.product-list{
+    border: 1px solid #4B5563;
+    border-radius: 10px;
+}
+
+
+.product-list img{
+    border-radius: 10px 10px 0px 0px;
+}
+.product-list>p{
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: "Outfit";
+}
+
+.product-list hr{
+    color: #4B5563;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.item-price{
+    display: flex;
+    gap: 5px;
+    font-family: "Inter";
+    font-size: 12px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.item-price p{
+    font-weight: 300;
+    color: #4B5563;
+    margin-top: 8px;
+}
+
+#price{
+    color: #059669;
+    font-size: 24px;
+    font-family: "Outfit";
+    font-weight: 600;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter";
+    font-size: 11px;
+    padding: 0px 20px;
+}
+
+#order{
+    font-weight: 600;
 }
