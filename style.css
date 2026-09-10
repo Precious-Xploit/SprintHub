@@ -69,7 +69,7 @@ nav{
 /* HERO SECTION */
 
 header{
-
+    background-color: #F9FAFB;
     padding-top: 80px;
     padding-bottom: 20px;
     display: flex;
@@ -304,7 +304,7 @@ header img{
 }
 
 .product-list{
-    border: 1px solid #4B5563;
+    box-shadow: 2px 2px 2px 2px #F9FAFB;
     border-radius: 10px;
 }
 
@@ -318,7 +318,7 @@ header img{
 .product-list>p{
     padding-left: 25px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Outfit";
 }
 
@@ -356,12 +356,37 @@ header img{
     font-family: "Inter";
     font-size: 11px;
     padding: 0px 20px;
+    align-items: center;
+}
+
+#normal{
+    color: #4B5563;
+    background-color: #ffffff;
+}
+
+.schedule{
+    background-color: #0B0F19;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #order{
     font-weight: 600;
 }
 
+.the_price{
+    font-family: "Outfit";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.green{
+    color: #059669;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Outfit";
+}
 
 /* BUSINESS */
 
@@ -383,6 +408,11 @@ header img{
 .business p{
     font-size: 16px;
     color: #9CA3AF;
+    max-width: 600px;
+    margin: 0px auto;
+    margin-top: -25px;
+    margin-bottom: 30px;
+
 }
 
 .business_btn{
@@ -446,12 +476,19 @@ header img{
     text-transform: uppercase;
 }
 
-hr{
-    /* width: 90%;
-    margin: 0px auto; */
+#horizontal{
+    width: 90%;
+    margin: 0px auto;
 }
 
 .the_footer{
+    width: 90%;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
+}
+
+#privacy{
+    display: flex;
+    gap:20px;
 }
