@@ -17,20 +17,22 @@
 
 
 body{
-    width: 90%;
+    max-width: 1280px;
     margin: 0px auto;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 nav{
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .set{
     display: flex;
-
 }
 
 .logo{
@@ -67,6 +69,7 @@ nav{
 /* HERO SECTION */
 
 header{
+
     padding-top: 80px;
     padding-bottom: 20px;
     display: flex;
@@ -196,24 +199,27 @@ header img{
 
 .brand-section{
     margin-top: 70px;
-     display: flex;
-     justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     font-family: "Inter";
     font-weight: 600;
     align-items: center;
-    font-size: 14px;
+    font-size: 20px;
     color: #4B5563;
 }
 
 .brands {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 50px;
 }
 
 .brand-line{
     color: #4B5563;
 }
+
+
+/* ITEMS */
 
 .items{
     margin-top: 100px;
@@ -244,10 +250,28 @@ header img{
 
 
 .item-list{
-    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
+    align-items: stretch;
+    gap: 60px; */
+
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+    gap: 30px;
+    align-items: stretch;
+    width: 100%; */
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(20px, 4vw, 60px); */
+
+    
+    display: flex;
+    gap:50px;
     align-items: center;
-    gap: 60px;
 }
 
 .item-section{
@@ -272,6 +296,13 @@ header img{
     color: #4B5563;
 }
 
+.products{
+    /* flex: 1 1 240px;
+    max-width: 320px;
+    min-width: 0; */
+
+}
+
 .product-list{
     border: 1px solid #4B5563;
     border-radius: 10px;
@@ -280,6 +311,9 @@ header img{
 
 .product-list img{
     border-radius: 10px 10px 0px 0px;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .product-list>p{
     padding-left: 25px;
@@ -316,7 +350,7 @@ header img{
     font-weight: 600;
 }
 
-.item{
+.item-area{
     display: flex;
     justify-content: space-between;
     font-family: "Inter";
@@ -326,4 +360,98 @@ header img{
 
 #order{
     font-weight: 600;
+}
+
+
+/* BUSINESS */
+
+.business{
+    background-color: #111827;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.business h4{
+    font-family: "Outfit";
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.business p{
+    font-size: 16px;
+    color: #9CA3AF;
+}
+
+.business_btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#advisor{
+    background-color: #111827;
+    border-radius: 10px;
+    width: 150px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* LAST SECTION */
+
+.last_sec{
+     background-color: #0B0F19;
+     color: #9CA3AF;
+}
+.sprint_last_sec{
+    padding: 100px;
+    display: flex;
+   
+    color: #ffffff;
+    justify-content: space-between;
+    font-family: "Inter";
+    
+    
+}
+
+
+.sprint_last_sec p{
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+.sprint{
+    display: flex;
+    gap: 10px;
+    font-family: "Outfit";
+    font-size: 20px;
+    
+}
+
+.last_sec_logo{
+    width: 500px;
+}
+
+.ocs{
+    display: flex;
+    gap: 50px;
+    
+}
+
+.ocs h4{
+    font-family: "Outfit";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+hr{
+    /* width: 90%;
+    margin: 0px auto; */
+}
+
+.the_footer{
+    display: flex;
+    justify-content: space-between;
 }
