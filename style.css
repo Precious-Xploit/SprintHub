@@ -242,7 +242,7 @@ nav{
 .brands{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 100px;
 }
 
 .brands img{
