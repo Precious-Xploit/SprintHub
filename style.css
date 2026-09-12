@@ -17,28 +17,37 @@
 
 
 body{
-    max-width: 1280px;
-    margin: 0px auto;
+    
     overflow-x: hidden;
     height: 100vh;
 }
 
 nav{
-
+    max-width: 1280px;
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
+.just_nav{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+
 .set{
     display: flex;
 }
 
-.logo{
+.just_nav{
     font-family: "Outfit";
     font-size: 22px;
     gap: 15px;
+    display: flex;
 }
 
 .services{
@@ -68,21 +77,32 @@ nav{
 
 /* HERO SECTION */
 
-header{
+.the_header{
     background-color: #F9FAFB;
-    padding-top: 80px;
-    padding-bottom: 20px;
-    display: flex;
-    gap: 50px;
+    /* width: 100%; */
 }
 
-header img{
-    width: 550px;
-    object-fit: contain;
+.header_sec{
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.the_image{
+    width: 50%;
+    
+}
+
+.the_image img{
+    width: 100%;
 }
 
 .hero-set{
-    max-width: 750px;
+    width: 45%;
 }
 
 .dot-text{
@@ -198,7 +218,12 @@ header img{
 /* BRANDS */
 
 .brand-section{
-    margin-top: 70px;
+    background-color: #ffffff;
+}
+
+.the_brand_section{
+    max-width: 1280px;
+    margin: 20px auto 0px auto ;
     display: flex;
     justify-content: space-between;
     font-family: "Inter";
@@ -206,15 +231,27 @@ header img{
     align-items: center;
     font-size: 20px;
     color: #4B5563;
+    /* animation: spin 15s infinite linear; */
 }
 
-.brands {
+@keyframes spin{
+    from{translate: 0;}
+    to{translate: -100%;}
+}
+
+.brands{
     display: flex;
     justify-content: space-between;
     gap: 50px;
 }
 
-.brand-line{
+.brands img{
+    width: 50px;
+}
+
+#brand-line{
+    max-width: 1280px;
+    margin: 0px auto;
     color: #4B5563;
 }
 
@@ -222,11 +259,26 @@ header img{
 /* ITEMS */
 
 .items{
-    margin-top: 100px;
+    /* background-color: #F9FAFB; */
+     margin-top: 50px;
+}
+
+.other_items{
+    background-color: #F9FAFB;
+    /* margin-top: 50px; */
+    padding: 30px 0px 30px 0px;
+}
+
+.the_items{
+    max-width: 1280px;
+    margin: 0px auto;
+    
+    /* padding-top: 30px; */
+    /* padding-bottom: 50px; */
 }
 
 .item-heading{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .item-heading p{
@@ -276,6 +328,7 @@ header img{
 
 .item-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-family: "Inter";
     font-size: 11px;
@@ -304,7 +357,8 @@ header img{
 }
 
 .product-list{
-    box-shadow: 2px 2px 2px 2px #F9FAFB;
+    box-shadow: 2px 2px 2px 5px #F9FAFB;
+    border: 1px solid #9CA3AF;
     border-radius: 10px;
 }
 
@@ -389,23 +443,30 @@ header img{
 }
 
 /* BUSINESS */
-
 .business{
     background-color: #111827;
+    
+}
+
+.the_business{
+    max-width: 1280px;
+    margin: 0px auto;
     color: #ffffff;
     justify-content: center;
     text-align: center;
     padding: 50px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
-.business h4{
+
+
+.the_business h4{
     font-family: "Outfit";
     font-weight: 600;
     font-size: 40px;
 }
 
-.business p{
+.the_business p{
     font-size: 16px;
     color: #9CA3AF;
     max-width: 600px;
@@ -433,12 +494,18 @@ header img{
 
 .last_sec{
      background-color: #0B0F19;
+}
+
+.the_last_sec{
+     max-width: 1280px;
+     margin: 0px auto;
      color: #9CA3AF;
 }
+
 .sprint_last_sec{
-    padding: 100px;
+    padding: 100px 0px;
     display: flex;
-   
+    flex-wrap: wrap;
     color: #ffffff;
     justify-content: space-between;
     font-family: "Inter";
@@ -477,12 +544,12 @@ header img{
 }
 
 #horizontal{
-    width: 90%;
+    max-width: 1280px;
     margin: 0px auto;
 }
 
 .the_footer{
-    width: 90%;
+    max-width: 1280px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -491,4 +558,306 @@ header img{
 #privacy{
     display: flex;
     gap:20px;
+}
+
+/* RESPONSIVE DESIGN */
+/* MOBILE */
+@media (width <= 480px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+        gap: 150px;
+    }
+
+    .just_nav{
+        display: flex;
+        gap: 10px;
+    }
+
+    #menu{
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+
+    .set{
+        display: none;
+    }
+
+    .header_sec{
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        /* justify-content: center; */
+    }
+
+    .hero-set h2{
+    font-family: "Outfit";
+    font-size: 32px;
+    color: #111827;
+    margin-top: 10px;
+}
+
+.the_image{
+    width: 90%;
+    margin: 10px auto;
+
+}
+
+.hero-set{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.hero-set > p{
+    font-size: 13px;
+}
+
+.the_btn{
+    flex-direction: column;
+
+}
+
+.the_btn button{
+    width: 100%;
+    margin: 0px auto;
+}
+
+#the_consult{
+    border: 1px solid ;
+}
+
+
+
+.verified{
+    display: none;
+}
+
+.the_image img{
+    width: 100%;
+    margin: 0px auto;
+}
+
+    .item-list{
+        flex-direction: column;
+    }
+
+    .sprint_last_sec{
+        flex-direction: column;
+    }
+
+    .ocs{
+        flex-direction: column;
+    }
+
+
+    .the_brand_section > p{
+        display: none;
+    }
+
+    .the_brand_section{
+        font-size: 8px;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .brands{
+        /* width: 90%; */
+
+        margin: 0px auto;
+        gap: 45px;
+    }
+
+    #brand-line{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .item-heading{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .item-heading p{
+        font-family: "Inter";
+        font-size: 14px;
+        color: #4B5563;
+    }
+
+#vertical{
+    color:  #10B981;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.item-heading h4{
+    font-size: 25px;
+    /* font-family: "Outfit";
+    margin-bottom: -10px; */
+}
+
+.products{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.the_business{
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+.the_business h4{
+    font-size: 25px;
+}
+
+.the_business p{
+    font-size: 14px;
+}
+
+.business_btn{
+    flex-direction: column;
+}
+
+.business_btn button{
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#advisor{
+width: 100%;
+}
+
+#btn_img{
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.the_last_sec{
+   
+}
+
+.sprint_last_sec{
+    width: 90%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.last_sec_logo{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.ocs{
+    width: 90%;
+    margin: 0px auto;
+    gap: 0px;
+    padding-bottom: 20px;
+}
+
+#horizontal{
+    width: 80%;
+    margin: 0px auto;
+}
+
+.the_footer{
+    width: 80%;
+    margin: 0px auto;
+    font-size: 10px;
+}
+
+}
+
+
+@media (480px < width <= 1024px) {
+    body{
+        overflow-x: hidden;
+        height: 100vh;
+    }
+
+    nav{
+        max-width: 90%;
+        margin: 0px auto;
+    }
+
+    .header_sec{
+        flex-direction: column;
+    }
+
+    .hero-set{
+        width: 90%;
+        margin: 0px auto;
+        padding-bottom: 50px;
+    }
+
+    .verified{
+        display: none;
+    }
+
+    .the_image{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .the_image img{
+        width: 100%;
+    }
+
+    .the_brand_section{
+        width: 90%;
+        margin: 0px auto;
+        font-size: 12px;
+    }
+
+    .brands{
+        /* width: 90%; */
+        margin: 0px auto;
+        gap: 30px;
+    }
+
+    #brand-line{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .item-heading{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .item-list{
+        width: 90%;
+        margin: 0px auto;
+        display: grid;
+    }
+
+    .sprint_last_sec{
+        width: 90%;
+        margin: 0px auto;
+        padding-bottom: 50px;
+        gap: 50px;
+    }
+
+    #horizontal{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .the_footer{
+        width: 90%;
+        margin: 0px auto;
+    }
 }
